@@ -1,0 +1,81 @@
+https://buddy.com/
+gratuitement: seulement 20 requêtes par seconde
+
+
+
+Free load balancer:
+http://www.zenloadbalancer.com/
+
+Free virtual loadbalancer
+http://freeloadbalancer.com/
+L7 Up to 20Mbps
+Must work online (check every 30 days)
+
+
+Dunno, but heard about it (here http://make.rafflecopter.com/custom-infrastructure-2-load-balancing.html ):
+http://www.haproxy.org/
+
+
+
+Paid Load balancer:
+30 days trial
+https://www.barracuda.com/products/loadbalancer
+
+Dropbox, Netflix, Zynga uses:
+https://www.nginx.com/resources/glossary/load-balancing/
+30 days trial
+https://www.nginx.com/solutions/load-balancing/
+Said for http?
+
+
+30 days trial
+https://www.arraynetworks.com/solutions-server-load-balancing.html
+
+30 days trial
+http://loadbalancer.org/
+
+Hourly charges/per GB of data
+https://cloud.google.com/compute/docs/load-balancing/
+
+0.015$/h
+https://www.rackspace.com/cloud/load-balancing
+
+https://www.citrix.com/glossary/load-balancing.html
+
+
+Possibility: client-side load-balancing
+https://gameserverarchitecture.com/2015/10/pattern-client-side-load-balancing/
+For an MMOG
+http://ithare.com/chapter-vib-server-side-architecture-front-end-servers-and-client-side-random-load-balancing/
+
+Academic research about load balancing:
+http://www2.cs.uni-paderborn.de/cs/ag-monien/RESEARCH/LOADBAL/
+
+Wikipedia
+https://en.wikipedia.org/wiki/Load_balancing_%28computing%29
+
+
+https://www.nginx.com/resources/glossary/load-balancing/
+    •Round Robin – Requests are distributed across the group of servers sequentially.
+    •Least Connections – A new request is sent to the server with the fewest current connections to clients. The relative computing capacity of each server is factored into determining which one has the least connections.
+    •IP Hash – The IP address of the client is used to determine which server receives the request.
+
+	+Least response time (à définir)
+
+https://f5.com/glossary/load-balancer
+	Load balancers are generally grouped into two categories: Layer 4 and Layer 7. Layer 4 load balancers act upon data found in network and transport layer protocols (IP, TCP, FTP, UDP). Layer 7 load balancers distribute requests based upon data found in application layer protocols such as HTTP.
+	
+About load balancers
+https://www.digitalocean.com/community/tutorials/5-common-server-setups-for-your-web-application	
+
+NIC=?
+https://en.wikipedia.org/wiki/Network_interface_controller
+NIC Is a network card
+
+VIP=?
+https://en.wikipedia.org/wiki/Virtual_IP_address
+VIP = The one IP that nodes will send things to
+
+http://www.jppf.org/about.php
+JPPF cut a task into sub-tasts and run them on a cluster
+->not load-balancing

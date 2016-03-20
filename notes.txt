@@ -1,0 +1,58 @@
+Phase 2 :
+rapport d’analyse pour votre supérieur
+présentant :
+—  un résumé du problème à résoudre (on n’installe pas un service pour rien)
+—  un descriptif détaillé du sujet traité et des choix faits (quoi, pourquoi, comment)
+—  une comparaison claire des différentes alternatives, s’il en existe
+—  le travail à réaliser pour mettre la technologie en œuvre
+	—  serveurs nécessaires
+	—  choix de l’OS
+	—  liste détaillée des différentes phases et planning
+N’oubliez pas que vous vous adressez à votre employeur, qui n’a pas à priori de formation avancée  en  informatique.  Vous  mettrez  donc  l’accent  sur  les  enjeux  de  votre  travail,  les fonctionnalités offertes, les raisons ayant conduit au choix du produit, etc.
+J’insiste sur le fait que cette partie du travail demande un e
+ort de vulgarisation. Exposez  les  diérents  points  de  façon  scientifique  et  précise,  mais  compréhensible  pour  le
+non-informaticien.
+
+
+
+Alex dit:
+Au sujet du rapport d'analyse:
+- Il est destiné à notre "patron" --> Vulgarisation
+- On y aborde le problème (Quel est le problème - Quelles sont les solutions)
+- II comportera un tableau de comparaison des différentes solutions possibles (les solutions)
+- Il comportera une petite argumentation sur le choix de la solution ("On a comparé et on a décidé que c'est meilleur parce que")
+- Il comportera le planning de la mise en place de la solution ("On va monter ceci, puis installer ça, ensuite le régler avec tels paramètres, etc")
+- Il comportera donc un cahier des charges et dépenses
+
+Résumé de ce que a dit le prof
+
+
+Notre mail:
+Bonsoir,
+
+Notre scénario prend le cas d'un serveur (qui répartit ses requêtes sur 
+des machines esclaves) d'un jeu. 
+Dans un premier temps, un joueur fait une partie en mode offline et 
+seul. Une fois le niveau terminé, il envoie son score au serveur pour 
+qu'il le place dans un classement. Pour vérifier l'authenticité du score 
+envoyé, le moveset de la partie est aussi envoyé avec le score. Il 
+s'agit là de la tâche qui alourdit le processus de publication du score: 
+le serveur (et ses esclaves) vont parcourir l'entièreté du log des 
+actions du joueur pour vérifier qu'il n'aie pas triché (en vérifiant 
+qu'il n'ait pas traversé un mur par exemple) et ainsi valider le score. 
+Le serveur reçoit 100 requêtes par seconde en moyenne (ce nombre peut 
+donc grandir de manière modérée à certaines reprises). Il est aussi 
+possible que le serveur se fasse submerger par un flot de 300-400 
+requêtes/sec. malveillantes (qui s'avèrent invalides après inspection). 
+On va supposer que les utilisateurs clients veulent connaître leur 
+classement immédiatement parce qu'il s'agit d'un jeu très populaire et 
+dont le classement est constamment mis à jour. On a donc une contrainte 
+temporelle; on ne peut pas simplement aligner les processus de 
+validation et postposer la publication d'un score. 
+Pour simuler cet environnement, nos client enverront au serveur une 
+série de nombre aléatoires ainsi que le seed utilisé pour les obtenir 
+pour que le serveur puisse valider le contenu des requêtes. En outre, 
+nous pouvons aussi limiter la taille du classement affiché de manière à 
+ne pas utiliser une database trop encombrante et à faciliter la 
+validation des scores (un score trop bas sera immédiatement écarté, 
+qu'il provienne d'un client bienveillant ou non).
