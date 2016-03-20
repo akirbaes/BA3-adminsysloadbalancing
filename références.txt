@@ -79,3 +79,41 @@ VIP = The one IP that nodes will send things to
 http://www.jppf.org/about.php
 JPPF cut a task into sub-tasts and run them on a cluster
 ->not load-balancing
+
+
+
+
+
+
+
+SUITE
+
+LVS on CentOS 6.2
+https://www.youtube.com/watch?v=YyzsUmQaBbw
+
+CentOS part de marché
+http://w3techs.com/technologies/history_details/os-linux/all/y
+
+Anotrher LVS tutorial
+http://www.ultramonkey.org/papers/lvs_tutorial/html/
+http://doc.fedora-fr.org/wiki/Cluster_LVS_ou_Linux_Virtual_Server
+Celui qui cite d'autres:
+http://kaivanov.blogspot.be/2013/01/building-load-balancer-with-lvs-linux.html
+
+
+https://www.nginx.com/blog/five-reasons-use-software-load-balancer/
+
+Layer 4 and 7
+http://whatis.techtarget.com/definition/Layer-4-7-Layer-4-through-Layer-7-services
+https://www.nginx.com/resources/glossary/layer-7-load-balancing/
+
+
+Python sockets
+http://www.tutorialspoint.com/python/python_networking.htm
+http://www.bogotobogo.com/python/python_network_programming_server_client.php
+
+Game tutorial using PodSixNet for python:
+https://www.raywenderlich.com/46843/multiplayer-game-programming-for-teens-with-python-part-2
+
+https://www.reddit.com/r/Python/comments/iifh4/what_is_a_good_way_to_develop_multiplayer_games/
+http://stackoverflow.com/questions/30227722/creating-a-multiplayer-game-in-python
